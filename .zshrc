@@ -278,5 +278,8 @@ if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
 
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
 # --- Source additional aliases ---
 [ -f ~/.zsh_aliases ] && source ~/.zsh_aliases

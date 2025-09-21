@@ -34,6 +34,9 @@ esac
 # FZF key bindings (if installed)
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
+
 # Bash input enhancements
 if [ -t 1 ]; then
     bind 'set enable-bracketed-paste on'

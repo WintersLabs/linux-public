@@ -35,7 +35,7 @@ esac
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Set up fzf key bindings and fuzzy completion
-eval "$(fzf --bash)"
+# eval "$(fzf --bash)"
 
 # Bash input enhancements
 if [ -t 1 ]; then
